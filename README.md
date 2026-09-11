@@ -128,6 +128,7 @@ thank-yous.js                   Editable example notes and photo references
 styles.css                     Theme and animations
 assets/photos/placeholder.svg  Generic sample illustration
 dev-server.py                  Local preview with clean-route fallback
+LICENSE                        Apache License 2.0 terms
 .nojekyll                      Disable Jekyll processing on Pages
 tests/                         Routing and local preview regression checks
 ```
@@ -153,4 +154,4 @@ In the new repository, open **Settings → General** and enable **Template repos
 
 ## License
 
-No license has been selected yet. Before distributing this as a reusable template, add a `LICENSE` file that states the reuse permissions. GitHub's [Choose a License](https://choosealicense.com/) explains the available options.
+This project is licensed under the [Apache License, Version 2.0](LICENSE). See the `LICENSE` file for the full terms and conditions.
