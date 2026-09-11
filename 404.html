@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A personalized baby shower thank-you note." />
+    <title>Thank You 💕</title>
+    <script>
+      // A guest link has one path segment after the site root. Resolve assets
+      // there, even when the guest URL ends in a slash (e.g. /repo/example-guest/).
+      const guestUrl = new URL(window.location.href);
+      guestUrl.pathname = guestUrl.pathname.replace(/\/+$/, "");
+      const base = document.createElement("base");
+      base.href = new URL(".", guestUrl).href;
+      document.head.appendChild(base);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="floating-hearts" aria-hidden="true">
+      <span>♡</span><span>✦</span><span>♡</span><span>✧</span><span>♡</span><span>✦</span>
+    </div>
+
+    <main id="app" class="page-shell">
+      <section class="loading-card">
+        <p>Loading your thank-you note...</p>
+      </section>
+    </main>
+
+    <noscript><p class="loading-card">Please enable JavaScript to view your thank-you note.</p></noscript>
+
+    <script src="./thank-yous.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
