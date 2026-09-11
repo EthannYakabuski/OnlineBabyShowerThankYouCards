@@ -144,14 +144,6 @@ python -m unittest discover -s tests
 
 The checks cover root and guest URLs, trailing slashes, photo paths, default notes, and the local preview server. Before publishing, also try your cards on a phone and with keyboard navigation.
 
-## Publishing a reusable template
-
-If this repository previously contained real family notes or photos, **deleting them from the latest files does not remove them from Git history**. Changing the existing repository to public can expose earlier versions, filenames, and commit metadata. GitHub documents the complexity of [removing sensitive data from repository history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
-
-For a clean public template, create a **new repository from only the sanitized files**, with a fresh initial commit. Do not copy the `.git` folder or fork the original repository. Keep the original repository private; publishing a clean copy does not remove any previously deployed content or existing copies elsewhere. Review the new repository's files and history before publishing it.
-
-In the new repository, open **Settings → General** and enable **Template repository** so others can use **Use this template**. See GitHub's [template repository guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository).
-
 ## License
 
 This project is licensed under the [Apache License, Version 2.0](LICENSE). See the `LICENSE` file for the full terms and conditions.
